@@ -14,10 +14,7 @@ class Index extends StatefulWidget {
 }
 
 class IndexState extends State<Index> {
-  final List<Menu> _init = [
-    Menu('Infinite ListView', 'Sample for infinite ListView.'),
-  ];
-
+  List<Menu> _init;
   List<Menu> _items;
 
   bool _icCloseVisible = false;
@@ -25,14 +22,14 @@ class IndexState extends State<Index> {
   TextEditingController _txtController = TextEditingController();
 
   @override
-  void initState() {
-    super.initState();
-    _items = _init;
-  }
-
-  @override
   Widget build(BuildContext context) {
     var localization = Localization.of(context);
+    final List<Menu> _init = [
+      Menu('Infinite ListView', localization.trans('INFINITE_LIST_VIEW_DESCRIPTION')),
+      Menu('Carousel', localization.trans('CAROUSEL_DESCRIPTION')),
+    ];
+
+    _items = _init;
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -105,7 +102,14 @@ class IndexState extends State<Index> {
             title: Text('${_items[index].title}'),
             subtitle: Text('${_items[index].description}'),
             onTap: () {
-              this._navigate('/infinite_list_view');
+              switch(index) {
+                case 0:
+                  this._navigate('/infinite_list_ex');
+                  break;
+                case 1:
+                  this._navigate('/carousel_ex');
+                  break;
+              }
             },
           );
         },

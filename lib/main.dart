@@ -7,8 +7,8 @@ import './utils/theme.dart' as Theme;
 import './screens/splash.dart' show Splash;
 import './screens/index.dart' show Index;
 
-import './examples/infinite_list_view.dart' show InfiniteListView;
-import './examples/carousel.dart' show Carousel;
+import './examples/infinite_list_ex.dart' show InfiniteListEx;
+import './examples/carousel_ex.dart' show CarouselEx;
 
 void main() => runApp(new MyApp());
 
@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/splash': (BuildContext context) => Splash(),
         '/index': (BuildContext context) => Index(),
-        '/infinite_list_view': (BuildContext context) => InfiniteListView(),
-        '/carousel': (BuildContext context) => Carousel(),
+        '/infinite_list_ex': (BuildContext context) => InfiniteListEx(),
+        '/carousel_ex': (BuildContext context) => CarouselEx(),
       },
       supportedLocales: [
         const Locale('en', 'US'),

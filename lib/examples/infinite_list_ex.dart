@@ -4,14 +4,14 @@ import 'dart:async';
 import '../models/menu.dart' show Menu;
 import '../utils/general.dart';
 
-class InfiniteListView extends StatefulWidget {
-  InfiniteListView({Key key}) : super(key: key);
+class InfiniteListEx extends StatefulWidget {
+  InfiniteListEx({Key key}) : super(key: key);
 
   @override
-  InfiniteListViewState createState() => new InfiniteListViewState();
+  InfiniteListExState createState() => new InfiniteListExState();
 }
 
-class InfiniteListViewState extends State<InfiniteListView> {
+class InfiniteListExState extends State<InfiniteListEx> {
   /// Infinite scrollview
   ScrollController _scrollController = ScrollController();
   bool _isPerformingRequest = false;
@@ -54,7 +54,7 @@ class InfiniteListViewState extends State<InfiniteListView> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'dooboolab'
+          'Infinite ListView'
         ),
       ),
       body: RefreshIndicator(
