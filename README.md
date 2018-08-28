@@ -64,5 +64,6 @@ We'll add more examples of building widgets along with `InfiniteListView` as we 
 ### Current List
 * [Infinite ListView](https://github.com/flutterdart/flutter_examples/blob/master/lib/examples/infinite_list_ex.dart)
   <br/><img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/infinite_list.gif"/>
+
 * [Carousel](https://github.com/flutterdart/flutter_examples/blob/master/lib/examples/carousel_ex.dart)
   <br/><img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/carousel.gif"/>
