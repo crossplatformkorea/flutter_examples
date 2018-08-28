@@ -20,7 +20,7 @@ class SplashState extends State<Splash> {
   Future<void> navigateRoute() async{
     String initialRoute = '/index';
 
-    Timer(Duration(seconds: 2), () {
+    Timer(Duration(seconds: 1), () {
       SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
       General.instance.navigateScreenNamed(context, initialRoute, reset: true);
     });
@@ -53,7 +53,7 @@ class SplashState extends State<Splash> {
           ),
           AnimatedOpacity(
             opacity: !_visible ? 0.0 : 1.0,
-            duration: Duration(milliseconds: 2000),
+            duration: Duration(milliseconds: 1000),
             child: Container(
               child: Center(
                 child: Text(
