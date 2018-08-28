@@ -6,7 +6,9 @@ import './utils/localization.dart';
 import './utils/theme.dart' as Theme;
 import './screens/splash.dart' show Splash;
 import './screens/index.dart' show Index;
-import 'package:flutter_examples/examples/infinite_list_view.dart' show InfiniteListView;
+
+import './examples/infinite_list_view.dart' show InfiniteListView;
+import './examples/carousel.dart' show Carousel;
 
 void main() => runApp(new MyApp());
 
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/splash': (BuildContext context) => Splash(),
         '/index': (BuildContext context) => Index(),
         '/infinite_list_view': (BuildContext context) => InfiniteListView(),
+        '/carousel': (BuildContext context) => Carousel(),
       },
       supportedLocales: [
         const Locale('en', 'US'),

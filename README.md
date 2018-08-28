@@ -1,6 +1,6 @@
-# flutter_boilerplate
+# flutter_examples
 
-Full boilerplate project for flutter.
+Full examples project for flutter.
 
 ## Getting Started
 
@@ -31,8 +31,8 @@ project/
 ├─ .metadata
 ├─ .gitignore
 ├─ .packages
-├─ .flutter_boilerplate.iml
-├─ .flutter_boilerplate_android.iml
+├─ .flutter_examples.iml
+├─ .flutter_examples_android.iml
 ├─ .pubspec.lock
 ├─ .pubspec.yaml
 └─ README.md
@@ -58,8 +58,9 @@ Text(localization.trans('LOADING'));
 ```
 
 ## Examples
-<img src="https://github.com/dooboolab/flutter_boilerplate/blob/master/doc/preview.gif"/>
+<img src="https://github.com/dooboolab/flutter_examples/blob/master/doc/preview.gif"/>
 We'll add more examples of building widgets along with `InfiniteListView` as we go on.
 
 ### Current List
 * Infinite ListView
+* Carousel
