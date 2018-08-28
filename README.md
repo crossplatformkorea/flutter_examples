@@ -59,7 +59,7 @@ Text(localization.trans('LOADING'));
 
 ## Examples
 <img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/index.gif"/>
-<br/>We'll add more examples of building widgets along with `InfiniteListView` as we go on.
+We'll add more examples of building widgets along with `InfiniteListView` as we go on.
 
 ### Current List
 * [Infinite ListView](https://github.com/flutterdart/flutter_examples/blob/master/lib/examples/infinite_list_ex.dart)
