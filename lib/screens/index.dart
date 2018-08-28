@@ -7,29 +7,35 @@ import '../utils/theme.dart' as Theme;
 import '../shared_widgets/text_input.dart';
 
 class Index extends StatefulWidget {
-  Index({Key key}) : super(key: key);
+  final List<Menu> initList;
+  Index({
+    Key key,
+    @required this.initList,
+  }) : super(key: key);
 
   @override
-  IndexState createState() => new IndexState();
+  IndexState createState() => new IndexState(initList);
 }
 
 class IndexState extends State<Index> {
-  List<Menu> _init;
-  List<Menu> _items;
+  final List<Menu> initList;
+  IndexState(this.initList);
+
+  List<Menu> _items = [];
 
   bool _icCloseVisible = false;
   bool _hasSearched = false;
   TextEditingController _txtController = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    _items = initList;
+  }
+
+  @override
   Widget build(BuildContext context) {
     var localization = Localization.of(context);
-    final List<Menu> _init = [
-      Menu('Infinite ListView', localization.trans('INFINITE_LIST_VIEW_DESCRIPTION')),
-      Menu('Carousel', localization.trans('CAROUSEL_DESCRIPTION')),
-    ];
-
-    _items = _init;
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
@@ -127,7 +133,7 @@ class IndexState extends State<Index> {
                 _icCloseVisible = false;
                 _txtController.text = '';
                 _hasSearched = false;
-                _items = _init;
+                _items = initList;
               });
             },
             child: Icon(
@@ -149,7 +155,7 @@ class IndexState extends State<Index> {
   }
 
   void _renderSearched(String str) {
-    _items = _init.where((item) => item.title.contains(str) || item.description.contains(str)).toList();
+    _items = initList.where((item) => item.title.contains(str) || item.description.contains(str)).toList();
     // print('${_items.toString()}');
   }
 

@@ -1,6 +1,6 @@
 {
   "LOADING": "Loading...",
   "SEARCH_HINT": "Please search.",
-  "INFINITE_LIST_VIEW_DESCRIPTION": "Sample of infinite ListView with delay.",
+  "INFINITE_LIST_DESCRIPTION": "Sample of infinite ListView with delay.",
   "CAROUSEL_DESCRIPTION": "Sample of carousel."
 }

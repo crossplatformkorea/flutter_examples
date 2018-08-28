@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter\_localizations/flutter\_localizations.dart';
 import 'dart:async';
 
-import './utils/localization.dart';
+import './models/menu.dart' show Menu;
+
+import './utils/localization.dart' show Localization, LocalizationDelegate;
 import './utils/theme.dart' as Theme;
 import './screens/splash.dart' show Splash;
 import './screens/index.dart' show Index;
@@ -14,6 +16,7 @@ void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -27,7 +30,10 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/splash': (BuildContext context) => Splash(),
-        '/index': (BuildContext context) => Index(),
+        '/index': (BuildContext context) => Index(initList: [
+          Menu('Infinite ListView', Localization.of(context).trans('INFINITE_LIST_DESCRIPTION')),
+          Menu('Carousel', Localization.of(context).trans('CAROUSEL_DESCRIPTION')),
+        ]),
         '/infinite_list_ex': (BuildContext context) => InfiniteListEx(),
         '/carousel_ex': (BuildContext context) => CarouselEx(),
       },
