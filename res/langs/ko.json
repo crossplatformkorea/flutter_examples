@@ -2,5 +2,6 @@
   "LOADING": "로딩중...",
   "SEARCH_HINT": "검색해주세요.",
   "INFINITE_LIST_DESCRIPTION": "Data를 무한으로 불러오는 infinite ListView 샘플입니다.",
-  "CAROUSEL_DESCRIPTION": "좌우로 스크롤 하는 carousel입니다."
+  "CAROUSEL_DESCRIPTION": "좌우로 스크롤 하는 carousel입니다.",
+  "BOTTOM_SHEET_DESCRIPTION": "밑에서 튀어나오는 Bottom Sheet 예제입니다."
 }

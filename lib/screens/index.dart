@@ -110,10 +110,13 @@ class IndexState extends State<Index> {
             onTap: () {
               switch(index) {
                 case 0:
-                  this._navigate('/infinite_list_ex');
+                  this._navigate('/ex_infinite_list');
                   break;
                 case 1:
-                  this._navigate('/carousel_ex');
+                  this._navigate('/ex_carousel');
+                  break;
+                case 2:
+                  this._navigate('/ex_bottom_sheet');
                   break;
               }
             },

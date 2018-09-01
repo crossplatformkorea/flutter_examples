@@ -9,8 +9,9 @@ import './utils/theme.dart' as Theme;
 import './screens/splash.dart' show Splash;
 import './screens/index.dart' show Index;
 
-import 'package:flutter_examples/screens/ex_infinite_list.dart' show ExInfiniteList;
-import 'package:flutter_examples/screens/ex_carousel.dart' show ExCarousel;
+import './screens/ex_infinite_list.dart' show ExInfiniteList;
+import './screens/ex_carousel.dart' show ExCarousel;
+import './screens/ex_bottom_sheet.dart' show ExBottomSheet;
 
 void main() => runApp(new MyApp());
 
@@ -33,9 +34,11 @@ class MyApp extends StatelessWidget {
         '/index': (BuildContext context) => Index(initList: [
           Menu('Infinite ListView', Localization.of(context).trans('INFINITE_LIST_DESCRIPTION')),
           Menu('Carousel', Localization.of(context).trans('CAROUSEL_DESCRIPTION')),
+          Menu('Bottom Sheet', Localization.of(context).trans('BOTTOM_SHEET_DESCRIPTION')),
         ]),
-        '/infinite_list_ex': (BuildContext context) => ExInfiniteList(),
-        '/carousel_ex': (BuildContext context) => ExCarousel(),
+        '/ex_infinite_list': (BuildContext context) => ExInfiniteList(),
+        '/ex_carousel': (BuildContext context) => ExCarousel(),
+        '/ex_bottom_sheet': (BuildContext context) => ExBottomSheet(),
       },
       supportedLocales: [
         const Locale('en', 'US'),

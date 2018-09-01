@@ -2,5 +2,6 @@
   "LOADING": "Loading...",
   "SEARCH_HINT": "Please search.",
   "INFINITE_LIST_DESCRIPTION": "Sample of infinite ListView with delay.",
-  "CAROUSEL_DESCRIPTION": "Sample of carousel."
+  "CAROUSEL_DESCRIPTION": "Sample of carousel.",
+  "BOTTOM_SHEET_DESCRIPTION": "Sample of bottom sheet."
 }

@@ -62,8 +62,11 @@ Text(localization.trans('LOADING'));
 We'll add more examples of building widgets along with `InfiniteListView` as we go on.
 
 ### Current List
-* [Infinite ListView](https://github.com/flutterdart/flutter_examples/blob/master/lib/examples/infinite_list_ex.dart)
+* [Infinite ListView](https://github.com/flutterdart/flutter_examples/blob/master/lib/screens/ex_infinite_list.dart)
   <br/><img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/infinite_list.gif"/>
 
-* [Carousel](https://github.com/flutterdart/flutter_examples/blob/master/lib/examples/carousel_ex.dart)
+* [Carousel](https://github.com/flutterdart/flutter_examples/blob/master/lib/screens/ex_carousel.dart)
   <br/><img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/carousel.gif"/>
+  
+* [BottomSheet](https://github.com/flutterdart/flutter_examples/blob/master/lib/screens/ex_bottom_sheet.dart)
+  <br/><img src="https://github.com/flutterdart/flutter_examples/blob/master/doc/bottom_sheet.gif"/>
