@@ -4,14 +4,14 @@ import 'dart:async';
 import '../models/menu.dart' show Menu;
 import '../utils/general.dart';
 
-class InfiniteListEx extends StatefulWidget {
-  InfiniteListEx({Key key}) : super(key: key);
+class ExInfiniteList extends StatefulWidget {
+  ExInfiniteList({Key key}) : super(key: key);
 
   @override
-  InfiniteListExState createState() => new InfiniteListExState();
+  _ExInifiniteListState createState() => new _ExInifiniteListState();
 }
 
-class InfiniteListExState extends State<InfiniteListEx> {
+class _ExInifiniteListState extends State<ExInfiniteList> {
   /// Infinite scrollview
   ScrollController _scrollController = ScrollController();
   bool _isPerformingRequest = false;

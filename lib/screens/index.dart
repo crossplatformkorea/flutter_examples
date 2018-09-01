@@ -47,7 +47,7 @@ class IndexState extends State<Index> {
           children: <Widget>[
             TextInput(
               controller: _txtController,
-              textInputAction: TextInputAction.search,
+//              textInputAction: TextInputAction.search,
               onChanged: (String str) {
                 this.setState(() {
                   _icCloseVisible = str != '';

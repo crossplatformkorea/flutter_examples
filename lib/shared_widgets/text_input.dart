@@ -80,7 +80,7 @@ class TextInput extends StatelessWidget {
             maxLength: this.maxLength,
             onSubmitted: this.onSubmit,
             keyboardType: this.keyboardType,
-            textInputAction: this.textInputAction != null ? this.textInputAction : TextInputAction.done,
+//            textInputAction: this.textInputAction != null ? this.textInputAction : TextInputAction.done,
             enabled: this.enabled,
             controller: this.controller,
             style: this.txtStyle,

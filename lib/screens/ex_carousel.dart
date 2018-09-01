@@ -5,12 +5,12 @@ import '../utils/theme.dart' as Theme;
 import '../utils/localization.dart' show Localization;
 import '../utils/general.dart';
 
-class CarouselEx extends StatefulWidget {
+class ExCarousel extends StatefulWidget {
   @override
-  _CarouselExState createState() => new _CarouselExState();
+  _ExCarouselState createState() => new _ExCarouselState();
 }
 
-class _CarouselExState extends State<CarouselEx> {
+class _ExCarouselState extends State<ExCarousel> {
   final List<String> imgUrls = [
     'http://catsatthestudios.com/wp-content/uploads/2017/12/12920541_1345368955489850_5587934409579916708_n-2-960x410.jpg',
     'http://catsatthestudios.com/wp-content/uploads/2014/11/calico.jpg',
